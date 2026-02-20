@@ -1,0 +1,154 @@
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "6b67caa402eb2b7d69dcda0452d1a9d7c5b4c74b93ad7ffa25e090f38e43e1ef", "payload": {"warp": "W0", "cycle": 0, "global_step": 4155, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W0:init": "DONE", "W0:step": "PENDING", "W0:score": "PENDING"}, "_ts": 1770660203.1607623}, "_ts": 1770660203.1661663, "eid": 5312}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "afde1808143da654d86b4901993a9891b628dc22dc6bd9b1834dbbacfa054bf3", "payload": {"warp": "W1", "cycle": 0, "global_step": 4155, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W1:init": "DONE", "W1:step": "PENDING", "W1:score": "PENDING"}, "_ts": 1770660203.1703913}, "_ts": 1770660203.1749094, "eid": 5313}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4155, "cycle": 0, "eid": 5314, "_ts": 1770660203.1872694}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "storage", "digest": "fafb2e651cd0ae5d823f99607bb3a6ac2f93d8a9a032b8842d069726839bee8d", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1770660203.W0.fafb2e651cd0.json", "global_step": 4156, "cycle": 0, "eid": 5315, "_ts": 1770660203.6892357}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "storage", "digest": "40c663e0b325be0136c13e470eee42f4983e5e373c88f3ede35f0a89a8471fe5", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1770660203.W1.40c663e0b325.json", "global_step": 4156, "cycle": 0, "eid": 5316, "_ts": 1770660203.7016106}
+{"event": "ENGINE_START", "resume": true, "global_step": 4156, "cycle": 0, "eid": 5317, "_ts": 1770660211.4487562}
+{"event": "WARP_BATCH_SUBMITTED", "warp": "W0", "batch": 1, "inflight": 1, "priority_value": 0.0, "global_step": 4157, "cycle": 0, "eid": 5318, "_ts": 1770660211.4660456}
+{"event": "NODE_RESULT", "warp": "W0", "node_id": "W0:init", "res": {"value": {"result": "OK"}}, "local_delta": {}, "rearm_step_score": false, "global_step": 4157, "cycle": 0, "eid": 5319, "_ts": 1770660211.478727}
+{"event": "WARP_BATCH_SUBMITTED", "warp": "W1", "batch": 1, "inflight": 1, "priority_value": -0.001, "global_step": 4158, "cycle": 0, "eid": 5320, "_ts": 1770660211.4976776}
+{"event": "NODE_RESULT", "warp": "W1", "node_id": "W1:init", "res": {"value": {"result": "OK"}}, "local_delta": {}, "rearm_step_score": false, "global_step": 4158, "cycle": 0, "eid": 5321, "_ts": 1770660211.5051641}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4160, "cycle": 0, "eid": 5322, "_ts": 1770660211.5372124}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4160, "cycle": 0, "eid": 5323, "_ts": 1770660211.5471373}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4165, "cycle": 0, "eid": 5324, "_ts": 1770660211.6134343}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4165, "cycle": 0, "eid": 5325, "_ts": 1770660211.6272774}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4170, "cycle": 0, "eid": 5326, "_ts": 1770660211.6920118}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4170, "cycle": 0, "eid": 5327, "_ts": 1770660211.7036974}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4175, "cycle": 0, "eid": 5328, "_ts": 1770660211.7671845}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4175, "cycle": 0, "eid": 5329, "_ts": 1770660211.7776172}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4180, "cycle": 0, "eid": 5330, "_ts": 1770660211.840459}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4180, "cycle": 0, "eid": 5331, "_ts": 1770660211.8519096}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4185, "cycle": 0, "eid": 5332, "_ts": 1770660211.915623}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4185, "cycle": 0, "eid": 5333, "_ts": 1770660211.9263868}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "86ac032ab12b718c417713d7c11621798f630a2ba2943f198c1989ae02a12463", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660211.W0.86ac032ab12b.json", "global_step": 4186, "cycle": 0, "eid": 5334, "_ts": 1770660211.9515219}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "17ab113fd13d0d5d6e6b7593a222ef2fd672822390597bf240ab0e7f91d87e49", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660211.W1.17ab113fd13d.json", "global_step": 4187, "cycle": 0, "eid": 5335, "_ts": 1770660211.9620657}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4190, "cycle": 0, "eid": 5336, "_ts": 1770660211.9896379}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4190, "cycle": 0, "eid": 5337, "_ts": 1770660211.9995232}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4195, "cycle": 0, "eid": 5338, "_ts": 1770660212.062118}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4195, "cycle": 0, "eid": 5339, "_ts": 1770660212.0762172}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4200, "cycle": 0, "eid": 5340, "_ts": 1770660212.1384592}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4200, "cycle": 0, "eid": 5341, "_ts": 1770660212.1487641}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4205, "cycle": 0, "eid": 5342, "_ts": 1770660212.212059}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4205, "cycle": 0, "eid": 5343, "_ts": 1770660212.2221127}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "bd276c06e218a9439924de460220123abf21195573d945c985431e2c3cc28f22", "payload": {"warp": "W0", "cycle": 0, "global_step": 4205, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W0:init": "DONE", "W0:step": "PENDING", "W0:score": "PENDING"}, "_ts": 1770660212.2279766}, "_ts": 1770660212.2330015, "eid": 5344}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "44b3d99f9d7dadfc16ba78011364c34787599dec0d41d437222a22ba160ce3dd", "payload": {"warp": "W1", "cycle": 0, "global_step": 4205, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W1:init": "DONE", "W1:step": "PENDING", "W1:score": "PENDING"}, "_ts": 1770660212.235545}, "_ts": 1770660212.2397006, "eid": 5345}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4210, "cycle": 0, "eid": 5346, "_ts": 1770660212.3019447}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4210, "cycle": 0, "eid": 5347, "_ts": 1770660212.3127158}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4215, "cycle": 0, "eid": 5348, "_ts": 1770660212.37603}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4215, "cycle": 0, "eid": 5349, "_ts": 1770660212.387823}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4220, "cycle": 0, "eid": 5350, "_ts": 1770660212.4514189}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4220, "cycle": 0, "eid": 5351, "_ts": 1770660212.466637}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "07d008e751d098030c4321191774425a716a64ae56377c4db42a9cbf4278933e", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660212.W0.07d008e751d0.json", "global_step": 4220, "cycle": 0, "eid": 5352, "_ts": 1770660212.4762144}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "1986b08797f5fb5336fc6bb55c8a41058bbf2b51cfad4c83e774df110c186acb", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660212.W1.1986b08797f5.json", "global_step": 4221, "cycle": 0, "eid": 5353, "_ts": 1770660212.4891987}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4225, "cycle": 0, "eid": 5354, "_ts": 1770660212.5285115}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4225, "cycle": 0, "eid": 5355, "_ts": 1770660212.5390887}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4230, "cycle": 0, "eid": 5356, "_ts": 1770660212.6038766}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4230, "cycle": 0, "eid": 5357, "_ts": 1770660212.614055}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4235, "cycle": 0, "eid": 5358, "_ts": 1770660212.6784565}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4235, "cycle": 0, "eid": 5359, "_ts": 1770660212.6890097}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4240, "cycle": 0, "eid": 5360, "_ts": 1770660212.7512743}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4240, "cycle": 0, "eid": 5361, "_ts": 1770660212.7621503}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4245, "cycle": 0, "eid": 5362, "_ts": 1770660212.824647}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4245, "cycle": 0, "eid": 5363, "_ts": 1770660212.8369513}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4250, "cycle": 0, "eid": 5364, "_ts": 1770660212.9031546}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4250, "cycle": 0, "eid": 5365, "_ts": 1770660212.913857}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4255, "cycle": 0, "eid": 5366, "_ts": 1770660212.9773495}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4255, "cycle": 0, "eid": 5367, "_ts": 1770660212.9882734}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "69d76644168e719e87edf763b7a0cfa0cdf7b4fdd4956ce260522a12805cf03f", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660212.W0.69d76644168e.json", "global_step": 4255, "cycle": 0, "eid": 5368, "_ts": 1770660212.9993234}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "2194878304f6de773656559650336aadb03880c4fa12baae71e24162b281fae5", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660213.W1.2194878304f6.json", "global_step": 4256, "cycle": 0, "eid": 5369, "_ts": 1770660213.010438}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4260, "cycle": 0, "eid": 5370, "_ts": 1770660213.0537293}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4260, "cycle": 0, "eid": 5371, "_ts": 1770660213.0634665}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4265, "cycle": 0, "eid": 5372, "_ts": 1770660213.1249144}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4265, "cycle": 0, "eid": 5373, "_ts": 1770660213.136317}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4270, "cycle": 0, "eid": 5374, "_ts": 1770660213.1981354}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "817856eab6c6dd5ad4ade3f6d15efdedbe777e672f2b2438a758542667942cbb", "payload": {"warp": "W0", "cycle": 0, "global_step": 4270, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W0:init": "DONE", "W0:step": "PENDING", "W0:score": "PENDING"}, "_ts": 1770660213.2038088}, "_ts": 1770660213.2094913, "eid": 5375}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "7083b9d70253a1b6cd4a918373f3054d3b60bd28282b81a934cbb85d7affadd7", "payload": {"warp": "W1", "cycle": 0, "global_step": 4270, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W1:init": "DONE", "W1:step": "PENDING", "W1:score": "PENDING"}, "_ts": 1770660213.2120142}, "_ts": 1770660213.2169533, "eid": 5376}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4270, "cycle": 0, "eid": 5377, "_ts": 1770660213.2274842}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4275, "cycle": 0, "eid": 5378, "_ts": 1770660213.296938}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4275, "cycle": 0, "eid": 5379, "_ts": 1770660213.3436131}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4280, "cycle": 0, "eid": 5380, "_ts": 1770660213.4079397}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4280, "cycle": 0, "eid": 5381, "_ts": 1770660213.4183476}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4285, "cycle": 0, "eid": 5382, "_ts": 1770660213.4834092}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4285, "cycle": 0, "eid": 5383, "_ts": 1770660213.494509}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "6e438550b61db79ec5dd6034bfcfc4f5834579fb315faf4c52e922f856f4b51d", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660213.W0.6e438550b61d.json", "global_step": 4287, "cycle": 0, "eid": 5384, "_ts": 1770660213.5256553}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "3f42005672170017e7b30c15c314153452f4470200a45ba78347abae0d1a1b4a", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660213.W1.3f4200567217.json", "global_step": 4288, "cycle": 0, "eid": 5385, "_ts": 1770660213.5374222}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4290, "cycle": 0, "eid": 5386, "_ts": 1770660213.558401}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4290, "cycle": 0, "eid": 5387, "_ts": 1770660213.568042}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4295, "cycle": 0, "eid": 5388, "_ts": 1770660213.6332147}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4295, "cycle": 0, "eid": 5389, "_ts": 1770660213.6521738}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4300, "cycle": 0, "eid": 5390, "_ts": 1770660213.7158308}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4300, "cycle": 0, "eid": 5391, "_ts": 1770660213.726592}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4305, "cycle": 0, "eid": 5392, "_ts": 1770660213.79034}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4305, "cycle": 0, "eid": 5393, "_ts": 1770660213.8016858}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4310, "cycle": 0, "eid": 5394, "_ts": 1770660213.864344}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4310, "cycle": 0, "eid": 5395, "_ts": 1770660213.8747587}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4315, "cycle": 0, "eid": 5396, "_ts": 1770660213.938322}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4315, "cycle": 0, "eid": 5397, "_ts": 1770660213.948865}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4320, "cycle": 0, "eid": 5398, "_ts": 1770660214.0135465}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4320, "cycle": 0, "eid": 5399, "_ts": 1770660214.0262206}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "ce453b2e2552beac58800336e449fe716dbbc8b6fabc1ebe0cbe81d3be84ce46", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660214.W0.ce453b2e2552.json", "global_step": 4321, "cycle": 0, "eid": 5400, "_ts": 1770660214.0487204}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "693cfffc4668b5a6f38b9bfeca842eea74d6c9ebcb83ebf92aa50dbf0f38257b", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660214.W1.693cfffc4668.json", "global_step": 4322, "cycle": 0, "eid": 5401, "_ts": 1770660214.0596101}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4325, "cycle": 0, "eid": 5402, "_ts": 1770660214.0885673}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4325, "cycle": 0, "eid": 5403, "_ts": 1770660214.100131}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4330, "cycle": 0, "eid": 5404, "_ts": 1770660214.1621974}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4330, "cycle": 0, "eid": 5405, "_ts": 1770660214.1732364}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "afe476f6b9e91d1f93943265e81ae8eb28a347673c13f8938f46ab0f89a89709", "payload": {"warp": "W0", "cycle": 0, "global_step": 4330, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W0:init": "DONE", "W0:step": "PENDING", "W0:score": "PENDING"}, "_ts": 1770660214.1789048}, "_ts": 1770660214.1837788, "eid": 5406}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "c66b6d03f672f02e5e48d7618327de0865f5bfcdea74affac265d4b4e99b723c", "payload": {"warp": "W1", "cycle": 0, "global_step": 4330, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W1:init": "DONE", "W1:step": "PENDING", "W1:score": "PENDING"}, "_ts": 1770660214.186549}, "_ts": 1770660214.1925986, "eid": 5407}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4335, "cycle": 0, "eid": 5408, "_ts": 1770660214.255677}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4335, "cycle": 0, "eid": 5409, "_ts": 1770660214.2663424}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4340, "cycle": 0, "eid": 5410, "_ts": 1770660214.3290539}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4340, "cycle": 0, "eid": 5411, "_ts": 1770660214.3397305}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4345, "cycle": 0, "eid": 5412, "_ts": 1770660214.403312}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4345, "cycle": 0, "eid": 5413, "_ts": 1770660214.4161162}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4350, "cycle": 0, "eid": 5414, "_ts": 1770660214.4790556}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4350, "cycle": 0, "eid": 5415, "_ts": 1770660214.4912379}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4355, "cycle": 0, "eid": 5416, "_ts": 1770660214.5540292}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4355, "cycle": 0, "eid": 5417, "_ts": 1770660214.563728}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "fc620758bbc1dfe4ab9b537a2f3bce62b4b9e4f8264ab7a41a154860e9e6e921", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660214.W0.fc620758bbc1.json", "global_step": 4355, "cycle": 0, "eid": 5418, "_ts": 1770660214.5747223}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "e378b7f7ab4385de654073f894b7b96f184fff56ba653ae17cdab02f6e4cafd7", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660214.W1.e378b7f7ab43.json", "global_step": 4356, "cycle": 0, "eid": 5419, "_ts": 1770660214.58758}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4360, "cycle": 0, "eid": 5420, "_ts": 1770660214.627849}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4360, "cycle": 0, "eid": 5421, "_ts": 1770660214.638234}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4365, "cycle": 0, "eid": 5422, "_ts": 1770660214.701402}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4365, "cycle": 0, "eid": 5423, "_ts": 1770660214.7127068}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4370, "cycle": 0, "eid": 5424, "_ts": 1770660214.778052}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4370, "cycle": 0, "eid": 5425, "_ts": 1770660214.7896483}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4375, "cycle": 0, "eid": 5426, "_ts": 1770660214.8532603}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4375, "cycle": 0, "eid": 5427, "_ts": 1770660214.8664575}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4380, "cycle": 0, "eid": 5428, "_ts": 1770660214.929461}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4380, "cycle": 0, "eid": 5429, "_ts": 1770660214.939258}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4385, "cycle": 0, "eid": 5430, "_ts": 1770660215.0039744}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4385, "cycle": 0, "eid": 5431, "_ts": 1770660215.0142174}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4390, "cycle": 0, "eid": 5432, "_ts": 1770660215.0790708}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4390, "cycle": 0, "eid": 5433, "_ts": 1770660215.089814}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "1869ac4e0cca1e6371b635a4267cc53edbe05bcd88ff196373066e0805a3bedf", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660215.W0.1869ac4e0cca.json", "global_step": 4390, "cycle": 0, "eid": 5434, "_ts": 1770660215.1017869}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "4a833eb7d622cb1afb50e08d9c74e69561e30d732790e50cba01cd2c3b115d69", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660215.W1.4a833eb7d622.json", "global_step": 4391, "cycle": 0, "eid": 5435, "_ts": 1770660215.112107}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4395, "cycle": 0, "eid": 5436, "_ts": 1770660215.154207}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "d734d57594f6eee1d5405fcd12bd596aca5f048a24ef5c75ab759400bccd9819", "payload": {"warp": "W0", "cycle": 0, "global_step": 4395, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W0:init": "DONE", "W0:step": "PENDING", "W0:score": "PENDING"}, "_ts": 1770660215.160201}, "_ts": 1770660215.1647675, "eid": 5437}
+{"event": "DIMENSION_TRANSFER", "target_dimension": "storage", "digest": "cfe93ba86e25d574f2a4811b3595cc61101ee899679d7239aba9f9719adb540d", "payload": {"warp": "W1", "cycle": 0, "global_step": 4395, "local": {"V": {"x": [6.0, 6.0, 6.0, 6.0], "x_try": [6.0, 6.0, 6.0, 6.0], "score": [999999.0, 999999.0, 999999.0, 999999.0], "score_try": [999999.0, 999999.0, 999999.0, 999999.0]}, "S": {"minscore": 999999.0, "seed": 0.0}, "MEM": {}}, "nodes": {"W1:init": "DONE", "W1:step": "PENDING", "W1:score": "PENDING"}, "_ts": 1770660215.1672943}, "_ts": 1770660215.1717474, "eid": 5438}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4395, "cycle": 0, "eid": 5439, "_ts": 1770660215.1820934}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4400, "cycle": 0, "eid": 5440, "_ts": 1770660215.247013}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4400, "cycle": 0, "eid": 5441, "_ts": 1770660215.2577355}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4405, "cycle": 0, "eid": 5442, "_ts": 1770660215.3205197}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4405, "cycle": 0, "eid": 5443, "_ts": 1770660215.3328414}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4410, "cycle": 0, "eid": 5444, "_ts": 1770660215.3962996}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4410, "cycle": 0, "eid": 5445, "_ts": 1770660215.409364}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4415, "cycle": 0, "eid": 5446, "_ts": 1770660215.474042}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4415, "cycle": 0, "eid": 5447, "_ts": 1770660215.4848907}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4420, "cycle": 0, "eid": 5448, "_ts": 1770660215.5464768}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4420, "cycle": 0, "eid": 5449, "_ts": 1770660215.5564325}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4425, "cycle": 0, "eid": 5450, "_ts": 1770660215.6186585}
+{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "replay", "digest": "c5641702b5b9b8676f0aecc363857885c28b1e3fd068107f42cccb702de7b5fe", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660215.W0.c5641702b5b9.json", "global_step": 4425, "cycle": 0, "eid": 5451, "_ts": 1770660215.62784}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4425, "cycle": 0, "eid": 5452, "_ts": 1770660215.6335733}
+{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "replay", "digest": "5a0138e0135a27994eadf15a6184d88147ee5bb53e2a2f56db65250488367d73", "snapshot_path": "dimensional_core\\state\\dimensions\\replay\\1770660215.W1.5a0138e0135a.json", "global_step": 4425, "cycle": 0, "eid": 5453, "_ts": 1770660215.6459737}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4430, "cycle": 0, "eid": 5454, "_ts": 1770660215.6989365}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4430, "cycle": 0, "eid": 5455, "_ts": 1770660215.7094135}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4435, "cycle": 0, "eid": 5456, "_ts": 1770660215.7721329}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4435, "cycle": 0, "eid": 5457, "_ts": 1770660215.784839}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4440, "cycle": 0, "eid": 5458, "_ts": 1770660215.8472295}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4440, "cycle": 0, "eid": 5459, "_ts": 1770660215.8650925}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4445, "cycle": 0, "eid": 5460, "_ts": 1770660215.9298272}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4445, "cycle": 0, "eid": 5461, "_ts": 1770660215.967107}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4450, "cycle": 0, "eid": 5462, "_ts": 1770660216.030934}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4450, "cycle": 0, "eid": 5463, "_ts": 1770660216.0412695}
+{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 4455, "cycle": 0, "eid": 5464, "_ts": 1770660216.1040685}
+{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 4455, "cycle": 0, "eid": 5465, "_ts": 1770660216.1140795}

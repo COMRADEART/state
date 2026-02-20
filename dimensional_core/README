@@ -1,0 +1,25 @@
+# Dimensional Core v0.1.0
+
+A replay-safe, crash-resilient, multi-warp execution engine with **Dimensional Transfer (C23)** snapshots.
+
+## What it is
+
+Dimensional Core is a research prototype that demonstrates:
+
+- **C20**: deterministic event logging + replay
+- **C22**: stability baseline (resume, crash recovery, monotonic global step)
+- **C23**: dimensional transfer snapshots (export warp state into named “dimensions”)
+
+This is not a GPU implementation — it’s an **execution architecture prototype** focused on reproducibility, recovery, and state migration.
+
+## Key features
+
+- Multi-warp execution (W0, W1, …) with deterministic scheduling support
+- Persistent instance point checkpoints (`state/instance_point.json`)
+- Event stream (`state/events.jsonl`) for replay stability
+
+## Quick start (Windows / PowerShell)
+
+### Run Engine (C20/C22: resume + replay)
+```powershell
+python -m dimensional_core.run_demo --resume

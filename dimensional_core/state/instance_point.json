@@ -1,0 +1,125 @@
+{
+  "global_step": 6760,
+  "cycle": 0,
+  "last_eid": 6564,
+  "instance": {
+    "lr_G0": 0.1,
+    "lr_G1": 0.1,
+    "lr_G2": 0.1,
+    "lr_G3": 0.1,
+    "lr_G4": 0.1,
+    "lr_G5": 0.1,
+    "lr_G6": 0.1,
+    "lr_G7": 0.1
+  },
+  "warps_state": {
+    "W0": {
+      "local": {
+        "V": {
+          "x": [
+            6.0,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "x_try": [
+            6.0,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "score": [
+            999999.0,
+            999999.0,
+            999999.0,
+            999999.0
+          ],
+          "score_try": [
+            999999.0,
+            999999.0,
+            999999.0,
+            999999.0
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W0:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W0:step": {
+          "status": "PENDING",
+          "result": null
+        },
+        "W0:score": {
+          "status": "PENDING",
+          "result": null
+        }
+      }
+    },
+    "W1": {
+      "local": {
+        "V": {
+          "x": [
+            6.0,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "x_try": [
+            6.0,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "score": [
+            999999.0,
+            999999.0,
+            999999.0,
+            999999.0
+          ],
+          "score_try": [
+            999999.0,
+            999999.0,
+            999999.0,
+            999999.0
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W1:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W1:step": {
+          "status": "PENDING",
+          "result": null
+        },
+        "W1:score": {
+          "status": "PENDING",
+          "result": null
+        }
+      }
+    }
+  },
+  "reason": "every_25_events",
+  "_ts": 1771597642.1114824
+}
