@@ -1,0 +1,33 @@
+{
+  "digest": "bfffef4911299731a83ef18f42d66c71ce4d609bb10bd5b1e85aa22b04c788d6",
+  "snapshot": {
+    "warp": "W0B",
+    "global_step": 8107,
+    "cycle": 0,
+    "local": {
+      "V": {
+        "x": [],
+        "x_try": [],
+        "score": [],
+        "score_try": []
+      },
+      "S": {
+        "minscore": 999999.0,
+        "seed": 0.0
+      },
+      "MEM": {}
+    },
+    "nodes": {
+      "W0B:init": {
+        "status": "DONE"
+      },
+      "W0B:step": {
+        "status": "PENDING"
+      },
+      "W0B:score": {
+        "status": "PENDING"
+      }
+    },
+    "_ts": 1771599852.5492897
+  }
+}

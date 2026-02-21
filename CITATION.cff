@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: Dimensional Core
+version: 0.1.0
+authors:
+  - family-names: Allamsetti
+    given-names: Ravi teja
+date-released: 2026-02-20
+abstract: >
+  Dimensional Core is a replay-safe, crash-resilient,
+  multi-warp execution engine supporting dimensional
+  snapshot export and branch restore.
+license: MIT
+

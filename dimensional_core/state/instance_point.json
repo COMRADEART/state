@@ -1,7 +1,7 @@
 {
-  "global_step": 6760,
+  "global_step": 11300,
   "cycle": 0,
-  "last_eid": 6564,
+  "last_eid": 9185,
   "instance": {
     "lr_G0": 0.1,
     "lr_G1": 0.1,
@@ -118,8 +118,41 @@
           "result": null
         }
       }
+    },
+    "W0B": {
+      "local": {
+        "V": {
+          "x": [],
+          "x_try": [],
+          "score": [],
+          "score_try": []
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W0B:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W0B:step": {
+          "status": "PENDING",
+          "result": null
+        },
+        "W0B:score": {
+          "status": "PENDING",
+          "result": null
+        }
+      }
     }
   },
   "reason": "every_25_events",
-  "_ts": 1771597642.1114824
+  "_ts": 1771599914.2216306
 }

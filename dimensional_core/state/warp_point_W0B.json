@@ -1,0 +1,19 @@
+{
+  "warp": "W0B",
+  "tag": "PERIODIC",
+  "global_step": 11300,
+  "local": {
+    "V": {
+      "x": [],
+      "x_try": [],
+      "score": [],
+      "score_try": []
+    },
+    "S": {
+      "minscore": 999999.0,
+      "seed": 0.0
+    },
+    "MEM": {}
+  },
+  "_ts": 1771599914.2262766
+}
