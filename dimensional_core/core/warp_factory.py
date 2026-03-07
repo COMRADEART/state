@@ -1,117 +1,205 @@
-# dimensional_core/core/warp_factory.py
 from __future__ import annotations
 
-from .graph import Node
+from dataclasses import dataclass, field
+from typing import Any, Dict, Iterable, List, Optional, Set
 
 
-def build_warp_graph(warp_id: str, lane_gids: list[str], instance: dict, lanes: int = 4):
+@dataclass
+class WarpNode:
+    id: str
+    op: str
+    params: Dict[str, Any] = field(default_factory=dict)
+    status: str = "PENDING"   # PENDING | READY | RUNNING | DONE
+    result: Any = None
+
+
+class WarpGraph:
     """
-    Builds a warp graph compatible with your current graph implementation.
+    Minimal warp execution graph.
 
-    Your graph class is TaskGraph (not Graph) and it DOES NOT have .add().
-    So we construct nodes, then call TaskGraph.add_node() / TaskGraph.add_edge()
-    (these exist in your earlier versions), and return the TaskGraph.
+    Expected flow:
+        init -> step -> score
 
-    If your TaskGraph uses different method names, update ONLY the 3 methods:
-      - _add_node(...)
-      - _add_edge(...)
-      - _set_entry(...)
+    The engine re-arms step/score after score completes, so the graph becomes:
+        init -> step -> score -> step -> score -> ...
     """
 
-    # Import TaskGraph from your graph module (your class is named TaskGraph)
-    from .graph import TaskGraph
+    def __init__(self, wid: str) -> None:
+        self.wid = wid
+        self.nodes: Dict[str, WarpNode] = {}
+        self.deps: Dict[str, Set[str]] = {}
+        self.revdeps: Dict[str, Set[str]] = {}
+        self.ready: Set[str] = set()
+        self._local: Dict[str, Any] = {}
 
-    g = TaskGraph()
+    # ------------------------------------------------------------------
+    # graph construction
+    # ------------------------------------------------------------------
 
-    # --------------------------
-    # helpers (adapt layer)
-    # --------------------------
-    def _add_node(node: Node):
-        # Most common names in your earlier code
-        if hasattr(g, "add_node"):
-            return g.add_node(node)
-        if hasattr(g, "add"):
-            return g.add(node)
-        # fallback: direct dict insert
-        if hasattr(g, "nodes") and isinstance(g.nodes, dict):
-            g.nodes[node.id] = node
+    def add_node(self, node: WarpNode) -> None:
+        self.nodes[node.id] = node
+        self.deps.setdefault(node.id, set())
+        self.revdeps.setdefault(node.id, set())
+
+    def add_edge(self, src: str, dst: str) -> None:
+        self.deps.setdefault(dst, set()).add(src)
+        self.revdeps.setdefault(src, set()).add(dst)
+
+    def finalize(self) -> None:
+        self.ready.clear()
+        for nid, node in self.nodes.items():
+            if node.status == "PENDING" and not self.deps.get(nid):
+                self.ready.add(nid)
+
+    # ------------------------------------------------------------------
+    # runtime operations
+    # ------------------------------------------------------------------
+
+    def take_ready(self, limit: int = 1) -> List[WarpNode]:
+        """
+        Returns up to `limit` ready nodes and marks them RUNNING.
+        """
+        if limit <= 0:
+            return []
+
+        chosen_ids = sorted(self.ready)[:limit]
+        out: List[WarpNode] = []
+
+        for nid in chosen_ids:
+            self.ready.discard(nid)
+            node = self.nodes[nid]
+            node.status = "RUNNING"
+            out.append(node)
+
+        return out
+
+    def mark_done(self, nid: str, result: Dict[str, Any]) -> None:
+        """
+        Marks node done and releases dependent nodes whose deps are all DONE.
+        """
+        if nid not in self.nodes:
             return
-        raise AttributeError("TaskGraph has no supported add method (add_node/add/nodes)")
 
-    def _add_edge(a: str, b: str):
-        # dependency edge: a -> b
-        if hasattr(g, "add_edge"):
-            return g.add_edge(a, b)
-        if hasattr(g, "edge"):
-            return g.edge(a, b)
-        # fallback: if graph stores deps in node
-        if hasattr(g, "nodes") and isinstance(g.nodes, dict) and b in g.nodes:
-            n = g.nodes[b]
-            deps = getattr(n, "deps", None)
-            if isinstance(deps, list):
-                deps.append(a)
-                return
-        raise AttributeError("TaskGraph has no supported edge method (add_edge/edge/deps)")
+        node = self.nodes[nid]
+        node.status = "DONE"
+        node.result = result
 
-    def _set_entry(node_id: str):
-        # optional: set entry/start node
-        if hasattr(g, "entry"):
-            g.entry = node_id
-        elif hasattr(g, "start"):
-            g.start = node_id
-        # otherwise ignore
+        for child_id in self.revdeps.get(nid, set()):
+            child = self.nodes.get(child_id)
+            if child is None or child.status != "PENDING":
+                continue
 
-    # --------------------------
-    # nodes
-    # --------------------------
-    # Vectors: we keep VISA ops, but your engine runs node.run() so Node must carry executable info.
-    # Your existing Node.run() likely interprets node.op/params in your VM layer.
+            parents = self.deps.get(child_id, set())
+            all_done = True
+            for pid in parents:
+                p = self.nodes.get(pid)
+                if p is None or p.status != "DONE":
+                    all_done = False
+                    break
 
-    init = Node(
-        id=f"{warp_id}:init",
+            if all_done:
+                self.ready.add(child_id)
+
+    def rearm(self, nid: str) -> None:
+        """
+        Resets a node back to PENDING so it can run again.
+        Used by engine for cyclic step/score execution.
+        """
+        if nid not in self.nodes:
+            return
+
+        node = self.nodes[nid]
+        node.status = "PENDING"
+        node.result = None
+
+        parents = self.deps.get(nid, set())
+        all_done = True
+        for pid in parents:
+            p = self.nodes.get(pid)
+            if p is None or p.status != "DONE":
+                all_done = False
+                break
+
+        if all_done:
+            self.ready.add(nid)
+
+    # ------------------------------------------------------------------
+    # debug helpers
+    # ------------------------------------------------------------------
+
+    def summary(self) -> Dict[str, Any]:
+        return {
+            "wid": self.wid,
+            "nodes": {
+                nid: {
+                    "status": node.status,
+                    "op": node.op,
+                    "params": dict(node.params),
+                }
+                for nid, node in self.nodes.items()
+            },
+            "ready": sorted(self.ready),
+        }
+
+
+def build_warp_graph(
+    wid: str,
+    lane_gids: Iterable[str] | None,
+    shared_instance: Dict[str, Any] | None,
+    lanes: int = 1,
+) -> WarpGraph:
+    """
+    Build a simple persistent compute graph for one warp.
+
+    Node ids:
+        <wid>:init
+        <wid>:step
+        <wid>:score
+
+    Engine _compile_task() expects op='VISA' and params['stage'] in {'init','step','score'}.
+    """
+    lane_gids = list(lane_gids or [])
+    shared_instance = shared_instance or {}
+
+    g = WarpGraph(wid)
+
+    init_node = WarpNode(
+        id=f"{wid}:init",
         op="VISA",
         params={
-            "lane_gids": list(lane_gids),
-            "lanes": lanes,
-            "warp": warp_id,
             "stage": "init",
+            "lane_gids": lane_gids,
         },
     )
 
-    step = Node(
-        id=f"{warp_id}:step",
+    step_node = WarpNode(
+        id=f"{wid}:step",
         op="VISA",
         params={
-            "lane_gids": list(lane_gids),
-            "lanes": lanes,
-            "warp": warp_id,
             "stage": "step",
+            "lane_gids": lane_gids,
+            "lr": 0.10,
         },
     )
 
-    score = Node(
-        id=f"{warp_id}:score",
+    score_node = WarpNode(
+        id=f"{wid}:score",
         op="VISA",
         params={
-            "lane_gids": list(lane_gids),
-            "lanes": lanes,
-            "warp": warp_id,
             "stage": "score",
+            "lane_gids": lane_gids,
         },
     )
 
-    # --------------------------
-    # build graph
-    # --------------------------
-    _add_node(init)
-    _add_node(step)
-    _add_node(score)
+    g.add_node(init_node)
+    g.add_node(step_node)
+    g.add_node(score_node)
 
-    # init -> step -> score -> step (loop)
-    _add_edge(init.id, step.id)
-    _add_edge(step.id, score.id)
-    _add_edge(score.id, step.id)
+    # init must happen first
+    g.add_edge(f"{wid}:init", f"{wid}:step")
 
-    _set_entry(init.id)
+    # step produces score
+    g.add_edge(f"{wid}:step", f"{wid}:score")
 
+    g.finalize()
     return g

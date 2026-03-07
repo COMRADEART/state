@@ -23,3 +23,22 @@ This is not a GPU implementation — it’s an **execution architecture prototyp
 ### Run Engine (C20/C22: resume + replay)
 ```powershell
 python -m dimensional_core.run_demo --resume
+
+## Minimal Architecture
+## Minimal Architecture
+Execution Dimension
+    Engine
+        ↳ Warps (W0, W1, ...)
+        ↳ Scheduler (HeapWarpScheduler)
+        ↳ ReadySet (O(1) node dispatch)
+
+Persistence Dimension
+    state/events.jsonl
+    state/instance_point.json
+
+Dimensional Transfer (C23)
+    capture → encode → persist
+    state/dimensions/<target>/*.json
+
+Restore Branch
+    snapshot → inject → scheduler register → resume execution

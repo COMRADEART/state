@@ -1,64 +1,24 @@
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11220, "cycle": 0, "eid": 405, "_ts": 1771599912.7261586}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11220, "cycle": 0, "eid": 406, "_ts": 1771599912.7395613}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11220, "cycle": 0, "eid": 407, "_ts": 1771599912.7556405}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11225, "cycle": 0, "eid": 408, "_ts": 1771599912.8214607}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11225, "cycle": 0, "eid": 409, "_ts": 1771599912.8351774}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11225, "cycle": 0, "eid": 410, "_ts": 1771599912.8504393}
-{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "storage", "digest": "7c0629a40d492eb7fcaf6a8bc99f8e62236d480d4591532b9c88935e4f8af723", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599912.W0.7c0629a40d49.json", "global_step": 11225, "cycle": 0, "eid": 411, "_ts": 1771599912.8570745}
-{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "storage", "digest": "ea2da5f671037857e8c92446015335752f251bf9325b00849fff3ed5a89b7edd", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599912.W1.ea2da5f67103.json", "global_step": 11226, "cycle": 0, "eid": 412, "_ts": 1771599912.8717787}
-{"event": "DIMENSION_TRANSFER", "warp": "W0B", "target_dimension": "storage", "digest": "7048caf5cfe10e0047eab0f2c55b43a40d131c6d0b70a7d93615bb7d5cedd0af", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599912.W0B.7048caf5cfe1.json", "global_step": 11227, "cycle": 0, "eid": 413, "_ts": 1771599912.8853085}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11230, "cycle": 0, "eid": 414, "_ts": 1771599912.9173772}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11230, "cycle": 0, "eid": 415, "_ts": 1771599912.9289522}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11230, "cycle": 0, "eid": 416, "_ts": 1771599912.9422646}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11235, "cycle": 0, "eid": 417, "_ts": 1771599913.007057}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11235, "cycle": 0, "eid": 418, "_ts": 1771599913.0190105}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11235, "cycle": 0, "eid": 419, "_ts": 1771599913.0325918}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11240, "cycle": 0, "eid": 420, "_ts": 1771599913.0971203}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11240, "cycle": 0, "eid": 421, "_ts": 1771599913.1097965}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11240, "cycle": 0, "eid": 422, "_ts": 1771599913.1240165}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11245, "cycle": 0, "eid": 423, "_ts": 1771599913.1894152}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11245, "cycle": 0, "eid": 424, "_ts": 1771599913.2026312}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11245, "cycle": 0, "eid": 425, "_ts": 1771599913.2187026}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11250, "cycle": 0, "eid": 426, "_ts": 1771599913.2832844}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11250, "cycle": 0, "eid": 427, "_ts": 1771599913.2954786}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11250, "cycle": 0, "eid": 428, "_ts": 1771599913.309045}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11255, "cycle": 0, "eid": 429, "_ts": 1771599913.3737493}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11255, "cycle": 0, "eid": 430, "_ts": 1771599913.3861248}
-{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "storage", "digest": "3725d4c55fd7b950b6e0cc6f9ddec7a8fd7a82a2a46ea09b89e9a30867efbbcd", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599913.W0.3725d4c55fd7.json", "global_step": 11255, "cycle": 0, "eid": 431, "_ts": 1771599913.4029043}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11255, "cycle": 0, "eid": 432, "_ts": 1771599913.404785}
-{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "storage", "digest": "011b204ea29319985132403b069647bfc34bfa1a83a9745317d2114c9e74c248", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599913.W1.011b204ea293.json", "global_step": 11255, "cycle": 0, "eid": 433, "_ts": 1771599913.4173958}
-{"event": "DIMENSION_TRANSFER", "warp": "W0B", "target_dimension": "storage", "digest": "34861297e4e35bd1768f13b4a885e115860f5392d8be30a7d6dc010acaa4450d", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599913.W0B.34861297e4e3.json", "global_step": 11256, "cycle": 0, "eid": 434, "_ts": 1771599913.4301739}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11260, "cycle": 0, "eid": 435, "_ts": 1771599913.470055}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11260, "cycle": 0, "eid": 436, "_ts": 1771599913.487051}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11260, "cycle": 0, "eid": 437, "_ts": 1771599913.500067}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11265, "cycle": 0, "eid": 438, "_ts": 1771599913.5651386}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11265, "cycle": 0, "eid": 439, "_ts": 1771599913.5767715}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11265, "cycle": 0, "eid": 440, "_ts": 1771599913.5904834}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11270, "cycle": 0, "eid": 441, "_ts": 1771599913.6564465}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11270, "cycle": 0, "eid": 442, "_ts": 1771599913.6697319}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11270, "cycle": 0, "eid": 443, "_ts": 1771599913.6859493}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11275, "cycle": 0, "eid": 444, "_ts": 1771599913.7500563}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11275, "cycle": 0, "eid": 445, "_ts": 1771599913.761384}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11275, "cycle": 0, "eid": 446, "_ts": 1771599913.7738874}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11280, "cycle": 0, "eid": 447, "_ts": 1771599913.8384092}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11280, "cycle": 0, "eid": 448, "_ts": 1771599913.8498409}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11280, "cycle": 0, "eid": 449, "_ts": 1771599913.8637064}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11285, "cycle": 0, "eid": 450, "_ts": 1771599913.928257}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11285, "cycle": 0, "eid": 451, "_ts": 1771599913.9442267}
-{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "storage", "digest": "bb20bc02619c25878668ebf54518619405bacc0f389c14cd0422627046914638", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599913.W0.bb20bc02619c.json", "global_step": 11285, "cycle": 0, "eid": 452, "_ts": 1771599913.9464426}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11285, "cycle": 0, "eid": 453, "_ts": 1771599913.9607086}
-{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "storage", "digest": "aebcb3a5851d69cc72fab882f99490d9d0dbbb1df66587bdd37f5ef7559ab33f", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599913.W1.aebcb3a5851d.json", "global_step": 11285, "cycle": 0, "eid": 454, "_ts": 1771599913.9634078}
-{"event": "DIMENSION_TRANSFER", "warp": "W0B", "target_dimension": "storage", "digest": "71d49a267ef7e5af368533f7975c7cbc92df5740713daa1ff4cf084a6a39a1e2", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599913.W0B.71d49a267ef7.json", "global_step": 11285, "cycle": 0, "eid": 455, "_ts": 1771599913.9761844}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11290, "cycle": 0, "eid": 456, "_ts": 1771599914.025696}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11290, "cycle": 0, "eid": 457, "_ts": 1771599914.0370917}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11290, "cycle": 0, "eid": 458, "_ts": 1771599914.0506856}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11295, "cycle": 0, "eid": 459, "_ts": 1771599914.1153665}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11295, "cycle": 0, "eid": 460, "_ts": 1771599914.126844}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11295, "cycle": 0, "eid": 461, "_ts": 1771599914.1405597}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11300, "cycle": 0, "eid": 462, "_ts": 1771599914.2056987}
-{"event": "WARP_POINT_SAVED", "warp": "W1", "tag": "PERIODIC", "global_step": 11300, "cycle": 0, "eid": 463, "_ts": 1771599914.2187405}
-{"event": "WARP_POINT_SAVED", "warp": "W0B", "tag": "PERIODIC", "global_step": 11300, "cycle": 0, "eid": 464, "_ts": 1771599914.2371428}
-{"event": "WARP_POINT_SAVED", "warp": "W0", "tag": "PERIODIC", "global_step": 11305, "cycle": 0, "eid": 465, "_ts": 1771599914.3016815}
-{"event": "DIMENSION_TRANSFER", "warp": "W0", "target_dimension": "storage", "digest": "dcc1bb5d4e6eb1e92afefaca493857a9de9592bf23b9d426d4c8ac291bd6538e", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599914.W0.dcc1bb5d4e6e.json", "global_step": 11305, "cycle": 0, "eid": 467, "_ts": 1771599914.4887}
-{"event": "DIMENSION_TRANSFER", "warp": "W1", "target_dimension": "storage", "digest": "418de7c27726e6c78a9d34dd815cd083ece56bd08ef5344094a206dca3125f88", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599914.W1.418de7c27726.json", "global_step": 11305, "cycle": 0, "eid": 468, "_ts": 1771599914.4991727}
-{"event": "DIMENSION_TRANSFER", "warp": "W0B", "target_dimension": "storage", "digest": "13bbdeeb2c093ffc3c12cd1a4d2a35bdaf1b3562d790c8f0c6c2bdb09c608ad4", "snapshot_path": "dimensional_core\\state\\dimensions\\storage\\1771599914.W0B.13bbdeeb2c09.json", "global_step": 11305, "cycle": 0, "eid": 469, "_ts": 1771599914.5097294}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W1","tag":"PERIODIC","global_step":995,"cycle":0},"eid":11761,"_ts":1772925589.4944885}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W2","tag":"PERIODIC","global_step":995,"cycle":0},"eid":11762,"_ts":1772925589.5018616}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W3","tag":"PERIODIC","global_step":995,"cycle":0},"eid":11763,"_ts":1772925589.5077477}
+{"type":"WARP_BATCH_SUBMITTED","payload":{"warp":"W0","batch":1,"inflight":2,"priority_value":7.888609052210118e-31,"global_step":996,"cycle":0},"eid":11764,"_ts":1772925589.5184333}
+{"type":"WARP_BATCH_SUBMITTED","payload":{"warp":"W3","batch":1,"inflight":2,"priority_value":-0.001,"global_step":996,"cycle":0},"eid":11765,"_ts":1772925589.5185056}
+{"type":"WARP_SCORE","payload":{"warp":"W0","min_score":7.888609052210118e-31,"priority_value":-0.001,"global_step":997,"cycle":0},"eid":11766,"_ts":1772925589.5289428}
+{"type":"NODE_RESULT","payload":{"warp":"W0","node_id":"W0:score","res":{"value":{"score_vec":[7.888609052210118e-31,7.888609052210118e-31],"min_score":7.888609052210118e-31},"score":7.888609052210118e-31},"local_delta":{},"rearm_step_score":true,"global_step":997,"cycle":0},"eid":11767,"_ts":1772925589.52903}
+{"type":"WARP_SCORE","payload":{"warp":"W3","min_score":7.888609052210118e-31,"priority_value":7.888609052210118e-31,"global_step":997,"cycle":0},"eid":11768,"_ts":1772925589.5290895}
+{"type":"NODE_RESULT","payload":{"warp":"W3","node_id":"W3:score","res":{"value":{"score_vec":[7.888609052210118e-31,7.888609052210118e-31],"min_score":7.888609052210118e-31},"score":7.888609052210118e-31},"local_delta":{},"rearm_step_score":true,"global_step":997,"cycle":0},"eid":11769,"_ts":1772925589.5291102}
+{"type":"WARP_BATCH_SUBMITTED","payload":{"warp":"W0","batch":1,"inflight":2,"priority_value":7.888609052210118e-31,"global_step":998,"cycle":0},"eid":11770,"_ts":1772925589.5403745}
+{"type":"WARP_BATCH_SUBMITTED","payload":{"warp":"W3","batch":1,"inflight":2,"priority_value":-0.001,"global_step":998,"cycle":0},"eid":11771,"_ts":1772925589.5404468}
+{"type":"NODE_RESULT","payload":{"warp":"W0","node_id":"W0:step","res":{"value":{"result":"OK"}},"local_delta":{},"rearm_step_score":false,"global_step":999,"cycle":0},"eid":11772,"_ts":1772925589.5508564}
+{"type":"NODE_RESULT","payload":{"warp":"W3","node_id":"W3:step","res":{"value":{"result":"OK"}},"local_delta":{},"rearm_step_score":false,"global_step":999,"cycle":0},"eid":11773,"_ts":1772925589.5509205}
+{"type":"WARP_BATCH_SUBMITTED","payload":{"warp":"W0","batch":1,"inflight":2,"priority_value":7.888609052210118e-31,"global_step":1000,"cycle":0},"eid":11774,"_ts":1772925589.5614445}
+{"type":"WARP_BATCH_SUBMITTED","payload":{"warp":"W3","batch":1,"inflight":2,"priority_value":-0.001,"global_step":1000,"cycle":0},"eid":11775,"_ts":1772925589.5615022}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W0","tag":"PERIODIC","global_step":1000,"cycle":0},"eid":11776,"_ts":1772925589.56765}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W1","tag":"PERIODIC","global_step":1000,"cycle":0},"eid":11777,"_ts":1772925589.5828083}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W2","tag":"PERIODIC","global_step":1000,"cycle":0},"eid":11778,"_ts":1772925589.5898015}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W3","tag":"PERIODIC","global_step":1000,"cycle":0},"eid":11779,"_ts":1772925589.5944436}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W0","tag":"STOP","global_step":1000,"cycle":0},"eid":11780,"_ts":1772925589.598887}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W1","tag":"STOP","global_step":1000,"cycle":0},"eid":11781,"_ts":1772925589.6034155}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W2","tag":"STOP","global_step":1000,"cycle":0},"eid":11782,"_ts":1772925589.6103137}
+{"type":"WARP_POINT_SAVED","payload":{"warp":"W3","tag":"STOP","global_step":1000,"cycle":0},"eid":11783,"_ts":1772925589.615166}
+{"type":"STOP","payload":{"global_step":1000,"cycle":0},"eid":11784,"_ts":1772925589.6158845}

@@ -1,15 +1,15 @@
 {
-  "global_step": 11300,
+  "global_step": 1000,
   "cycle": 0,
-  "last_eid": 9185,
+  "last_eid": 11784,
   "instance": {
     "lr_G0": 0.1,
-    "lr_G1": 0.1,
-    "lr_G2": 0.1,
-    "lr_G3": 0.1,
     "lr_G4": 0.1,
+    "lr_G1": 0.1,
     "lr_G5": 0.1,
+    "lr_G2": 0.1,
     "lr_G6": 0.1,
+    "lr_G3": 0.1,
     "lr_G7": 0.1
   },
   "warps_state": {
@@ -17,28 +17,24 @@
       "local": {
         "V": {
           "x": [
-            6.0,
-            6.0,
-            6.0,
-            6.0
+            3.000000000000001,
+            3.000000000000001
           ],
           "x_try": [
-            6.0,
-            6.0,
             6.0,
             6.0
           ],
           "score": [
-            999999.0,
-            999999.0,
-            999999.0,
-            999999.0
+            7.888609052210118e-31,
+            7.888609052210118e-31
           ],
           "score_try": [
             999999.0,
-            999999.0,
-            999999.0,
             999999.0
+          ],
+          "g": [
+            1.7763568394002505e-15,
+            1.7763568394002505e-15
           ]
         },
         "S": {
@@ -57,41 +53,42 @@
           }
         },
         "W0:step": {
-          "status": "PENDING",
-          "result": null
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
         },
         "W0:score": {
-          "status": "PENDING",
+          "status": "RUNNING",
           "result": null
         }
-      }
+      },
+      "last_score_ts": 1772925589.5289276
     },
     "W1": {
       "local": {
         "V": {
           "x": [
-            6.0,
-            6.0,
-            6.0,
-            6.0
+            4.92,
+            4.92
           ],
           "x_try": [
-            6.0,
-            6.0,
             6.0,
             6.0
           ],
           "score": [
-            999999.0,
-            999999.0,
-            999999.0,
-            999999.0
+            5.760000000000002,
+            5.760000000000002
           ],
           "score_try": [
             999999.0,
-            999999.0,
-            999999.0,
             999999.0
+          ],
+          "g": [
+            4.800000000000001,
+            4.800000000000001
           ]
         },
         "S": {
@@ -110,22 +107,43 @@
           }
         },
         "W1:step": {
-          "status": "PENDING",
-          "result": null
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
         },
         "W1:score": {
           "status": "PENDING",
           "result": null
         }
-      }
+      },
+      "last_score_ts": 1772925570.2328756
     },
-    "W0B": {
+    "W2": {
       "local": {
         "V": {
-          "x": [],
-          "x_try": [],
-          "score": [],
-          "score_try": []
+          "x": [
+            4.536,
+            4.536
+          ],
+          "x_try": [
+            6.0,
+            6.0
+          ],
+          "score": [
+            3.6864,
+            3.6864
+          ],
+          "score_try": [
+            999999.0,
+            999999.0
+          ],
+          "g": [
+            3.84,
+            3.84
+          ]
         },
         "S": {
           "minscore": 999999.0,
@@ -134,7 +152,7 @@
         "MEM": {}
       },
       "nodes": {
-        "W0B:init": {
+        "W2:init": {
           "status": "DONE",
           "result": {
             "value": {
@@ -142,17 +160,294 @@
             }
           }
         },
-        "W0B:step": {
-          "status": "PENDING",
-          "result": null
+        "W2:step": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
         },
-        "W0B:score": {
+        "W2:score": {
           "status": "PENDING",
           "result": null
         }
-      }
+      },
+      "last_score_ts": 1772925570.3512695
+    },
+    "W3": {
+      "local": {
+        "V": {
+          "x": [
+            3.000000000000001,
+            3.000000000000001
+          ],
+          "x_try": [
+            6.0,
+            6.0
+          ],
+          "score": [
+            7.888609052210118e-31,
+            7.888609052210118e-31
+          ],
+          "score_try": [
+            999999.0,
+            999999.0
+          ],
+          "g": [
+            1.7763568394002505e-15,
+            1.7763568394002505e-15
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W3:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W3:step": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W3:score": {
+          "status": "RUNNING",
+          "result": null
+        }
+      },
+      "last_score_ts": 1772925589.529085
     }
   },
-  "reason": "every_25_events",
-  "_ts": 1771599914.2216306
+  "graphs_state": {
+    "W0": {
+      "local": {
+        "V": {
+          "x": [
+            3.000000000000001,
+            3.000000000000001
+          ],
+          "x_try": [
+            6.0,
+            6.0
+          ],
+          "score": [
+            7.888609052210118e-31,
+            7.888609052210118e-31
+          ],
+          "score_try": [
+            999999.0,
+            999999.0
+          ],
+          "g": [
+            1.7763568394002505e-15,
+            1.7763568394002505e-15
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W0:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W0:step": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W0:score": {
+          "status": "RUNNING",
+          "result": null
+        }
+      },
+      "last_score_ts": 1772925589.5289276
+    },
+    "W1": {
+      "local": {
+        "V": {
+          "x": [
+            4.92,
+            4.92
+          ],
+          "x_try": [
+            6.0,
+            6.0
+          ],
+          "score": [
+            5.760000000000002,
+            5.760000000000002
+          ],
+          "score_try": [
+            999999.0,
+            999999.0
+          ],
+          "g": [
+            4.800000000000001,
+            4.800000000000001
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W1:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W1:step": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W1:score": {
+          "status": "PENDING",
+          "result": null
+        }
+      },
+      "last_score_ts": 1772925570.2328756
+    },
+    "W2": {
+      "local": {
+        "V": {
+          "x": [
+            4.536,
+            4.536
+          ],
+          "x_try": [
+            6.0,
+            6.0
+          ],
+          "score": [
+            3.6864,
+            3.6864
+          ],
+          "score_try": [
+            999999.0,
+            999999.0
+          ],
+          "g": [
+            3.84,
+            3.84
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W2:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W2:step": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W2:score": {
+          "status": "PENDING",
+          "result": null
+        }
+      },
+      "last_score_ts": 1772925570.3512695
+    },
+    "W3": {
+      "local": {
+        "V": {
+          "x": [
+            3.000000000000001,
+            3.000000000000001
+          ],
+          "x_try": [
+            6.0,
+            6.0
+          ],
+          "score": [
+            7.888609052210118e-31,
+            7.888609052210118e-31
+          ],
+          "score_try": [
+            999999.0,
+            999999.0
+          ],
+          "g": [
+            1.7763568394002505e-15,
+            1.7763568394002505e-15
+          ]
+        },
+        "S": {
+          "minscore": 999999.0,
+          "seed": 0.0
+        },
+        "MEM": {}
+      },
+      "nodes": {
+        "W3:init": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W3:step": {
+          "status": "DONE",
+          "result": {
+            "value": {
+              "result": "OK"
+            }
+          }
+        },
+        "W3:score": {
+          "status": "RUNNING",
+          "result": null
+        }
+      },
+      "last_score_ts": 1772925589.529085
+    }
+  },
+  "reason": "stop",
+  "_ts": 1772925589.6159565
 }
