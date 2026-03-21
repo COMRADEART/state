@@ -4,6 +4,10 @@ import heapq
 import threading
 from typing import Dict, List, Tuple
 
+_DEFAULT_AGE_BONUS = 0.001      # score reduction per epoch since last served
+_HEAP_COMPACTION_FACTOR = 4     # compact when heap > active_warps * this
+_PRIORITY_TOLERANCE = 1e-12     # treat priority differences below this as equal
+
 
 class HeapWarpScheduler:
     """
@@ -20,7 +24,7 @@ class HeapWarpScheduler:
     - Heap is compacted periodically so it does not grow without bound.
     """
 
-    def __init__(self, age_bonus: float = 0.001) -> None:
+    def __init__(self, age_bonus: float = _DEFAULT_AGE_BONUS) -> None:
         self.age_bonus = float(age_bonus)
 
         self.scores: Dict[str, float] = {}
@@ -75,7 +79,7 @@ class HeapWarpScheduler:
                     continue  # stale entry
 
                 cur = self._priority_locked(wid)
-                if abs(cur - pr) > 1e-12:
+                if abs(cur - pr) > _PRIORITY_TOLERANCE:
                     # entry is outdated due to lazy aging; refresh it
                     self._versions[wid] = self._versions.get(wid, 0) + 1
                     self._push_locked(wid)
@@ -102,7 +106,7 @@ class HeapWarpScheduler:
 
     def _maybe_compact_locked(self) -> None:
         active = max(1, len(self.scores))
-        if len(self._heap) <= active * 4:
+        if len(self._heap) <= active * _HEAP_COMPACTION_FACTOR:
             return
 
         fresh: List[Tuple[float, int, str]] = []

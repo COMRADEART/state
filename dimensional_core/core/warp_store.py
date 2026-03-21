@@ -6,6 +6,9 @@ import os
 import time
 import uuid
 
+_WRITE_RETRY_COUNT = 3      # max retries for atomic warp-point write
+_WRITE_RETRY_SLEEP_S = 0.05 # base sleep for write retries (doubles each attempt)
+
 
 class WarpStore:
     """
@@ -41,22 +44,26 @@ class WarpStore:
             f.flush()
             os.fsync(f.fileno())
 
-        # atomic replace (best-effort on Windows)
-        try:
-            os.replace(tmp, path)
-        except PermissionError:
-            # Windows sometimes holds file locks briefly; try delete then rename
+        # atomic replace with exponential backoff (Windows may hold file locks briefly)
+        for attempt in range(_WRITE_RETRY_COUNT):
             try:
-                if os.path.exists(path):
-                    os.remove(path)
-                os.rename(tmp, path)
-            finally:
-                # cleanup if temp still exists
-                if os.path.exists(tmp):
-                    try:
-                        os.remove(tmp)
-                    except OSError:
-                        pass
+                os.replace(tmp, path)
+                return path
+            except PermissionError:
+                if attempt < _WRITE_RETRY_COUNT - 1:
+                    time.sleep(_WRITE_RETRY_SLEEP_S * (2 ** attempt))
+
+        # All os.replace attempts failed; try delete+rename as last resort
+        try:
+            if os.path.exists(path):
+                os.remove(path)
+            os.rename(tmp, path)
+        finally:
+            if os.path.exists(tmp):
+                try:
+                    os.remove(tmp)
+                except OSError:
+                    pass
 
         return path
 

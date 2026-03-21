@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Runtime state (generated at runtime — not source)
+dimensional_core/state/
+tests/state/
+
+# Temp files from atomic writes
+*.tmp.*
+
+# Claude Code internal files
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

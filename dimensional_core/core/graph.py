@@ -1,3 +1,4 @@
+# EXPERIMENTAL — not used by the production engine
 # dimensional_core/core/graph.py
 from __future__ import annotations
 

@@ -1,3 +1,4 @@
+# EXPERIMENTAL — not used by the production engine
 # dimensional_core/core/ready_set.py
 from __future__ import annotations
 from collections import deque

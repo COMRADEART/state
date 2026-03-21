@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, Iterable, List, Optional, Set
 
+_DEFAULT_LANE_LR = 0.10  # gradient descent learning rate per lane
+
 
 @dataclass
 class WarpNode:
@@ -178,7 +180,7 @@ def build_warp_graph(
         params={
             "stage": "step",
             "lane_gids": lane_gids,
-            "lr": 0.10,
+            "lr": _DEFAULT_LANE_LR,
         },
     )
 

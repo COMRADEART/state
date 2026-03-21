@@ -7,6 +7,11 @@ import threading
 import time
 from typing import Any, Dict, Iterable, List, Optional
 
+_READ_RETRY_COUNT = 8       # max retries for reading a file under contention
+_READ_RETRY_SLEEP_S = 0.03  # base sleep for read retries (doubles each attempt)
+_WRITE_RETRY_COUNT = 12     # max retries for atomic file writes
+_WRITE_RETRY_SLEEP_S = 0.05 # base sleep for write retries (doubles each attempt)
+
 
 class StateStore:
     def __init__(
@@ -20,6 +25,7 @@ class StateStore:
         self.instance_path = instance_path
         self.events_path = events_path
         self.eid_path = eid_path
+        self._state_dir = os.path.dirname(instance_path)  # exposed for engine/warp_store
 
         self.event_flush_every = max(1, int(event_flush_every))
         self.event_flush_interval_s = max(0.0, float(event_flush_interval_s))
@@ -47,14 +53,14 @@ class StateStore:
         if not os.path.exists(self.instance_path):
             return None
 
-        for _ in range(8):
+        for attempt in range(_READ_RETRY_COUNT):
             try:
                 with open(self.instance_path, "r", encoding="utf-8") as f:
                     return json.load(f)
             except PermissionError:
-                time.sleep(0.03)
+                time.sleep(_READ_RETRY_SLEEP_S * (2 ** attempt))
             except json.JSONDecodeError:
-                time.sleep(0.03)
+                time.sleep(_READ_RETRY_SLEEP_S * (2 ** attempt))
             except Exception:
                 return None
 
@@ -68,7 +74,7 @@ class StateStore:
 
         last_err = None
 
-        for attempt in range(12):
+        for attempt in range(_WRITE_RETRY_COUNT):
             tmp = f"{self.instance_path}.tmp.{os.getpid()}.{threading.get_ident()}"
 
             try:
@@ -87,7 +93,7 @@ class StateStore:
                         os.remove(tmp)
                 except OSError:
                     pass
-                time.sleep(0.05 * (attempt + 1))
+                time.sleep(_WRITE_RETRY_SLEEP_S * (2 ** attempt))
 
             except Exception:
                 try:
@@ -118,13 +124,13 @@ class StateStore:
                 pass
             return 0
 
-        for _ in range(8):
+        for attempt in range(_READ_RETRY_COUNT):
             try:
                 with open(self.eid_path, "r", encoding="utf-8") as f:
                     raw = f.read().strip() or "0"
                     return int(raw)
             except PermissionError:
-                time.sleep(0.03)
+                time.sleep(_READ_RETRY_SLEEP_S * (2 ** attempt))
             except Exception:
                 return 0
 
@@ -133,7 +139,7 @@ class StateStore:
     def _persist_eid(self) -> None:
         last_err = None
 
-        for attempt in range(12):
+        for attempt in range(_WRITE_RETRY_COUNT):
             tmp = f"{self.eid_path}.tmp.{os.getpid()}.{threading.get_ident()}"
             try:
                 with open(tmp, "w", encoding="utf-8") as f:
@@ -149,7 +155,7 @@ class StateStore:
                         os.remove(tmp)
                 except OSError:
                     pass
-                time.sleep(0.05 * (attempt + 1))
+                time.sleep(_WRITE_RETRY_SLEEP_S * (2 ** attempt))
             except Exception:
                 try:
                     if os.path.exists(tmp):
@@ -268,7 +274,7 @@ class StateStore:
 
             last_err = None
 
-            for attempt in range(12):
+            for attempt in range(_WRITE_RETRY_COUNT):
                 try:
                     if self._events_fp is not None and not self._events_fp.closed:
                         self._events_fp.close()
@@ -289,7 +295,7 @@ class StateStore:
 
                 except PermissionError as e:
                     last_err = e
-                    time.sleep(0.05 * (attempt + 1))
+                    time.sleep(_WRITE_RETRY_SLEEP_S * (2 ** attempt))
                 except Exception:
                     try:
                         self._ensure_events_fp()

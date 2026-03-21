@@ -1,3 +1,4 @@
+# EXPERIMENTAL — not used by the production engine
 from __future__ import annotations
 from .graph import TaskGraph, Node
 from .isa import Instr

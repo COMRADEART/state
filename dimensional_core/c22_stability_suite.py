@@ -1,3 +1,4 @@
+# EXPERIMENTAL — not used by the production engine
 # dimensional_core/c22_stability_suite.py
 from __future__ import annotations
 
